@@ -2,8 +2,6 @@
 #include "ui_widget.h"
 #include <QMouseEvent>
 #include <QDebug>
-#include <QLabel>
-#include <QVBoxLayout>
 
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
@@ -12,11 +10,6 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | windowFlags());
-
-    label = new QLabel();
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->addWidget(label);
-    setLayout(mainLayout);
 }
 
 Widget::~Widget()

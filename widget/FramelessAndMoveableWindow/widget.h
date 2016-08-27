@@ -2,8 +2,6 @@
 #define WIDGET_H
 
 #include <QWidget>
-class QMouseEvent;
-class QLabel;
 
 namespace Ui {
 class Widget;
@@ -21,7 +19,6 @@ private:
     Ui::Widget *ui;
     bool m_bPressed;
     QPoint m_point;
-    QLabel *label;
 
     // QWidget interface
 protected:
